@@ -2,7 +2,6 @@ package com.lck.outshop.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.lck.outshop.entity.User;
-import com.lck.starter.SendMsgService;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
@@ -14,12 +13,12 @@ import java.io.IOException;
 @RestController
 @RequestMapping(path = "/api")
 public class OutShop {
-    private SendMsgService sendMsgService;
+//    private SendMsgService sendMsgService;
 
     @Autowired
-    public OutShop(SendMsgService sendMsgService) {
-        this.sendMsgService = sendMsgService;
-    }
+//    public OutShop(SendMsgService sendMsgService) {
+//        this.sendMsgService = sendMsgService;
+//    }
 
     @RequestMapping(path = "/index_category", method = RequestMethod.GET)
     public ResultMessage index_category() {
@@ -57,8 +56,8 @@ public class OutShop {
     public ResultMessage getMsg(
             @RequestParam(name = "phone") String phone
     ) {
-        String code = sendMsgService.getCode(phone);
-        return ResultMessage.getDefaultResultMessage(0, JSON.parse(code));
+//        String code = sendMsgService.getCode(phone);
+        return ResultMessage.getDefaultResultMessage(0, JSON.parse(""));
     }
 
     /**
