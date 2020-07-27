@@ -46,11 +46,11 @@
             <version>2.3.29</version>
         </dependency>
         <!--自定义starter-->
-        <dependency>
-            <groupId>com.lck.starter</groupId>
-            <artifactId>sendmsg-spring-boot-starter</artifactId>
-            <version>1.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.lck.starter</groupId>-->
+<!--            <artifactId>sendmsg-spring-boot-starter</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
         <!--从libs中引入jar到maven项目中-->
         <dependency>
             <groupId>httpclient</groupId>
